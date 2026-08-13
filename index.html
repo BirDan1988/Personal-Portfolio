@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#F05A47",
+                        secondary: "#5F5F5B",
+                        hover: "#D94A3A",
+                        accent: "#38BDF8",
+
+                        gradientStart: "#5B5FEF",
+                        gradientEnd: "#10B981",
+
+                        soft_background: "#FFF0ED",
+                        border: "#E8E7E3",
+
+                        btnPrimary: "#2563EB",
+                        btnHover: "#48EBFA",
+
+                        heading: "#171717",
+                        light_coral: "#FFD9D2"
+                    },
+
+                    fontFamily: {
+                        poppins: ['poppins', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                        oswald: ['Oswald', 'sans-serif'],
+                        roboto: ['roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="w-full ">
+            <div data-duration="0.5s"
+                class="relative animate__animated animate__fadeInDown container  mx-auto px-3 py-2 flex justify-between items-center">
+                <!-- logo part -->
+                <div class=" logo flex gap-3 items-center">
+                    <img class=" transition-all duration-300 ease hover:-translate-y-0.5 w-[45px] h-[35px] sm:w-[60px] sm:h-[50px]"
+                        src="images/LOGO.png">
+                    <div class="title">
+                        <h2 class="font-semibold text-heading text-xl sm:text-2xl lg:text-3xl font-poppins">Birju Danak
+                        </h2>
+                        <p class="text-secondary text-md lg:text-xl font-medium font-inter">Web Designer</p>
+                    </div>
+                </div>
+                <!-- navmenu -->
+                <div class="nav-menu">
+                    <ul class="hidden lg:flex  gap-5">
+                        <li><a href=""
+                                class="py-2 uppercase text-md font-semibold font-poppins text-primary border-b-[2px] border-primary">Home</a>
+                        </li>
+                        <li><a href="" class="nav-link py-2 uppercase text-md font-medium font-poppins text-secondary  relative transition-colors duration-300 hover:text-primary
+   after:absolute after:left-0 after:-bottom-0.5 after:h-[2px]
+   after:w-0 after:bg-primary after:transition-all after:duration-300
+   hover:after:w-full">Service</a></li>
+                        <li><a href="" class="nav-link py-2 uppercase text-md font-medium font-poppins text-secondary relative transition-colors duration-300 hover:text-primary
+   after:absolute after:left-0 after:-bottom-0.5 after:h-[2px]
+   after:w-0 after:bg-primary after:transition-all after:duration-300
+   hover:after:w-full">About</a>
+                        </li>
+                        <li><a href="" class="nav-link py-2 uppercase text-md font-medium font-poppins text-secondary relative transition-colors duration-300 hover:text-primary
+   after:absolute after:left-0 after:-bottom-0.5 after:h-[2px]
+   after:w-0 after:bg-primary after:transition-all after:duration-300
+   hover:after:w-full">Journey</a>
+                        </li>
+                        <li><a href="" class="nav-link py-2 uppercase text-md font-medium font-poppins text-secondary relative transition-colors duration-300 hover:text-primary
+   after:absolute after:left-0 after:-bottom-0.5 after:h-[2px]
+   after:w-0 after:bg-primary after:transition-all after:duration-300
+   hover:after:w-full">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- contact-button -->
+                <div class="button-theme flex gap-3 lg:gap-6 items-center">
+                    <div class="hidden sm:flex button">
+                        <a href="" class="text-md font-medium font-inter bg-primary hover:bg-hover text-white px-4 py-2 rounded-lg transition-all duration-300
+       hover:-translate-y-0.5
+       hover:shadow-md">Contact</a>
+                    </div>
+                    <div id="toggle-theme"
+                        class="theme size-9 rounded-lg border border-gray-300 justify-center items-center flex transition-transform duration-300 hover:rotate-12 hover:soft_background">
+                        <i id="moon" class="fa-regular fa-moon text-xl"></i>
+                        <i id="sun" class="ri-sun-line text-xl hidden"></i>
+                    </div>
+                    <div id="toggle-btn-menu" class="toggle-mobile-menu flex lg:hidden">
+                        <i class="fa-solid fa-bars text-primary text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- toggle-mobile-div -->
+                <div
+                    class="toggle-nav-menu absolute left-0 top-full  z-90 w-full h-0 transition-all duration-300 ease overflow-hidden">
+                    <ul class="flex flex-col lg:hidden  gap-5   px-3 py-3">
+                        <li><a href="" class="py-2 uppercase text-md font-semibold font-poppins text-primary ">Home</a>
+                        </li>
+                        <li><a href=""
+                                class="nav-link py-2 uppercase text-md font-medium font-poppins text-secondary   transition-colors duration-300 hover:text-primary">Service</a>
+                        </li>
+                        <li><a href="" class="nav-link py-2 uppercase text-md font-medium font-poppins text-secondary  transition-colors duration-300 hover:text-primary">About</a>
+                        </li>
+                        <li><a href=""
+                                class="nav-link py-2 uppercase text-md font-medium font-poppins text-secondary  transition-colors duration-300 hover:text-primary">Journey</a>
+                        </li>
+                        <li><a href=""
+                                class="nav-link py-2 uppercase text-md font-medium font-poppins text-secondary  transition-colors duration-300 hover:text-primary">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="w-full">
+            <div class="container mx-auto px-3">
+                <div class="grid grid-cols-2">
+                    <div class="left-part px-3">
+                        <di class="span">Available for work</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
