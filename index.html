@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -137,10 +138,45 @@
     <section id="hero">
         <div class="w-full">
             <div class="container mx-auto px-3">
-                <div class="grid grid-cols-2">
-                    <div class="left-part px-3">
-                        <di class="span">Available for work</div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 flex  flex-col lg:flex-row gap-5 items-center">
+                    <div class="animate__animated animate__fadeInLeft left-part px-3 order-2 lg:order-1">
+                        <span class="indicator text-green-600 flex items-center gap-2 font-medium font-inter"><i class="fa-solid fa-circle text-[8px] animate-[pulseDot_1.5s_ease-in-out_infinite] flex justify-center items-center"></i>Available for work</span>
+                        <h1 data-duration="0.8s" class="animate__animated animate__fadeInUp text-[24px]/[30px] min-[550px]:text-[40px]/[50px]  md:text-[54px]/[70px] text-heading font-bold font-poppins mt-3">
+                            I Design Websites
+                           <br><span class="text-primary">That Make an Impact</span> 
+                        </h1>
+                        <p data-duration="0.8s" data-delay="0.15s" class="animate__animated animate__fadeInUp text-secondary font-medium text-sm sm:text-[20px]/[30px] font-inter mt-4">
+                            I create clean, modern and responsive websites 
+                          <br class="hidden lg:block"> that help businesses grow and connect with
+                           <br class="hidden lg:block">their audience.
+                        </p>
+                        <div class="hero-button mt-8 flex flex-col sm:flex-row gap-3 sm:gap-5">
+                            <div class="primary-btn ">
+                                <a class="font-poppins font-medium text-sm px-4 py-2 rounded-md bg-primary text-white flex sm:inline-flex items-center gap-3 border border-primary justify-center   transition-all duration-300 ease-out hover:bg-hover hover:-translate-y-1 hover:shadow-lg" href="">Hire Me <i class="fa-solid fa-arrow-right text-lg"></i></a>
+                            </div>
+                            <div class="secondary-btn">
+                            <a class="font-poppins font-medium text-sm px-4 py-2 rounded-md bg-transparent text-primary border border-primary rounded-lg flex sm:inline-flex items-center gap-3 justify-center transition-all duration-300 ease-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:shadow-md" href="">Download CV<i class="fa-solid fa-download text-lg"></i></a>
 
+                            </div>
+                        </div>
+                        <div class="social-links mt-8">
+                            <p class="text-secondary text-lg font-medium font-inter">Find me on</p>
+                            <div class="social-icons mt-2 flex gap-4">
+                            <div class="linkedin w-[50px] h-[45px] rounded-lg flex justify-center items-center border border-gray-300  transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:shadow-xl">
+                                <i class="fa-brands fa-linkedin-in text-2xl text-heading hover:text-primary"></i>
+                            </div>
+                            <div class="linkedin w-[50px] h-[45px] rounded-lg flex justify-center items-center border border-gray-300 transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:shadow-xl">
+                                <i class="fa-brands fa-github text-2xl text-heading hover:text-primary"></i>
+                            </div><div class="linkedin w-[50px] h-[45px] rounded-lg flex justify-center items-center border border-gray-300 transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:shadow-xl">
+                                <i class="fa-regular fa-envelope text-2xl text-heading hover:text-primary"></i>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="animate__animated animate__fadeInRight right-part flex justify-center order-1 lg:order-2">
+                        <div class="hero-image w-full">
+                            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.01]" src="images/Hero-image-1.png">
+                        </div>
                     </div>
                 </div>
             </div>

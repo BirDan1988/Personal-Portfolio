@@ -2,11 +2,21 @@
 box-sizing: border-box;
 }
 
-.dark-primary-bg{
-    background-color: #171717;
+/* .dark-heading{
+    color: #171717 !important;
 
 }
 
-.dark-primary-h{
-    text:;
+.light-heading{
+    color:#ffffff !important;
+} */
+
+@keyframes pulseDot {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
 }

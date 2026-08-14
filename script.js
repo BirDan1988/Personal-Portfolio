@@ -3,11 +3,12 @@ $(document).ready(function(){
  $('#toggle-theme').click(function(){
     
      $('html').toggleClass('bg-[#171717]')
-     $('h2').toggleClass('text-[#FAFAF8]')
-     $('p,i').toggleClass('text-[#C5C5C0]')
+     $('h2,h1,.social-icons i').toggleClass('text-[#FAFAF8]')
+     $('p,#moon,#sun').toggleClass('text-[#C5C5C0]')
      $('.nav-link').toggleClass('text-white/70')
-     $('#moon').toggleClass('hidden')
-     $('#sun').toggleClass('hidden')
+     $('#moon').toggle('hide')
+     $('#sun').toggle('show')
+    
  })
 
  $('#toggle-btn-menu').click(function(){
