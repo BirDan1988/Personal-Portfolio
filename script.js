@@ -8,6 +8,7 @@ $(document).ready(function(){
      $('.nav-link').toggleClass('text-white/70')
      $('#moon').toggle('hide')
      $('#sun').toggle('show')
+     $('.toggle-nav-menu').toggleClass('text-white bg-black')
 
     
  })

@@ -55,7 +55,7 @@
     <header>
         <div class="w-full ">
             <div data-duration="0.5s"
-                class="relative animate__animated animate__fadeInDown container  mx-auto px-3 py-2 flex justify-between items-center">
+                class="relative z-50 animate__animated animate__fadeInDown container  mx-auto px-3 py-2 flex justify-between items-center">
                 <!-- logo part -->
                 <div class=" logo flex gap-3 items-center">
                     <img class=" transition-all duration-300 ease hover:-translate-y-0.5 w-[45px] h-[35px] sm:w-[60px] sm:h-[50px]"
@@ -100,7 +100,7 @@
 
                 <!-- toggle-mobile-div -->
                 <div
-                    class="toggle-nav-menu absolute left-0 top-full  z-90 w-full h-0 transition-all duration-300 ease overflow-hidden">
+                    class="toggle-nav-menu absolute left-0 top-full  z-90 w-full bg-white h-0 transition-all duration-300 ease overflow-hidden">
                     <ul class="flex flex-col lg:hidden  gap-5   px-3 py-3">
                         <li><a href="" class="py-2 uppercase text-md font-semibold font-poppins text-primary ">Home</a>
                         </li>
@@ -183,9 +183,9 @@
             <!-- card-section -->
              <div data-duration="0.8s"  class="animate__animated animate__fadeInRight container px-3 mx-auto mt-10">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
-                    <div data-delay="0.1s" class="animate__animated animate__fadeInUp">
-                    <div class=  " card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] flex flex-col gap-4 transition-all duration-300 ease hover:-translate-y-2 hover:shadow-lg hover:border-primary">
-                        <div class="icon size-[60px] rounded-full bg-primary/10 hover:bg-primary flex justify-center items-center group duration-300 transition-all ease">
+                    <div data-delay="0.1s" class="animate__animated animate__fadeInUp h-full">
+                    <div class=  " card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] flex flex-col gap-4 transition-all duration-300 group ease hover:-translate-y-2 hover:shadow-lg hover:border-primary">
+                        <div class="icon size-[60px] rounded-full bg-primary/10 group-hover:bg-primary flex justify-center items-center  duration-300 transition-all ease">
                          <i class="fa-solid fa-desktop text-primary group-hover:text-white text-2xl"></i>
                         </div>
                         <h2 class="text-heading text-xl font-poppins font-medium">Web Design</h2>
@@ -195,9 +195,9 @@
                             <a class="flex items-center text-[18px] font-medium text-primary gap-3 transition-all duration-300 ease group" href="">View Project<i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
                     </div>
                     </div>
-                    <div data-delay="0.2s" class="div animate__animated animate__fadeInUp">
-                    <div  class=" card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] flex flex-col gap-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary">
-                        <div class="icon size-[60px] rounded-full bg-primary/10 hover:bg-primary flex justify-center items-center group duration-300 transition-all ease">
+                    <div data-delay="0.2s" class="div animate__animated animate__fadeInUp h-full">
+                    <div  class=" card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] flex flex-col group gap-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary h-full">
+                        <div class="icon size-[60px] rounded-full bg-primary/10 group-hover:bg-primary flex justify-center items-center  duration-300 transition-all ease">
                          <i class="fa-solid fa-mobile-screen-button text-primary group-hover:text-white text-2xl"></i>
                         </div>
                         <h2 class="text-heading text-xl font-poppins font-medium">Responsive Design</h2>
@@ -208,8 +208,8 @@
                     </div>
                     </div>
                     <div data-delay="0.3s" class="div animate__animated animate__fadeInUp">
-                    <div  class="p card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] flex flex-col gap-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary">
-                        <div class="icon size-[60px] rounded-full bg-primary/10 hover:bg-primary flex justify-center items-center group duration-300 transition-all ease">
+                    <div  class="p card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] flex flex-col group gap-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary h">
+                        <div class="icon size-[60px] rounded-full bg-primary/10 group-hover:bg-primary flex justify-center items-center  duration-300 transition-all ease">
                          <i class="fa-solid fa-rocket text-primary group-hover:text-white text-2xl"></i>
                         </div>
                         <h2 class="text-heading text-xl font-poppins font-medium">Landing Pages</h2>
@@ -220,8 +220,8 @@
                     </div>
                     </div>
                     <div data-delay="0.4s" class="div animate__animated animate__fadeInUp">
-                    <div  class=" card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] flex flex-col gap-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary">
-                        <div class="icon size-[60px] rounded-full bg-primary/10 hover:bg-primary flex justify-center items-center group duration-300 transition-all ease">
+                    <div  class=" card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] group flex flex-col gap-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary h-full">
+                        <div class="icon size-[60px] rounded-full bg-primary/10 group-hover:bg-primary flex justify-center items-center  duration-300 transition-all ease">
                          <i class="fa-solid fa-bezier-curve text-primary group-hover:text-white text-2xl"></i>
                         </div>
                         <h2 class="text-heading text-xl font-poppins font-medium">UI Design</h2>
@@ -243,7 +243,7 @@
                 <div class="grid grid-cols-12">
                     <div data-duration="0.8s" class="animate__animated animate__fadeInLeft image-about col-span-12 lg:col-span-4 rounded-lg overflow-hidden">
         
-                        <img class="w-full h-full object-cover hover:scale-[1.01] hover:shadow-lg transition-all duration-300 ease border" src="images/about-image.png">
+                        <img class="w-full h-full object-cover hover:scale-[1.01] hover:shadow-lg transition-all duration-300 ease " src="images/about-image.png">
                         
                     </div>
                     <div class="col-span-12 lg:col-span-8 px-0 lg:px-3 mt-5 lg:mt-0">
@@ -376,17 +376,17 @@
 
     <section id="journey">
         <div class="w-full mt-[50px]">
-          <div class="animate__animated animate__fadeInLeft container px-3 mx-auto">
+          <div class="animate__animated animate__fadeInLeft container px-6 mx-auto">
                  <div class="title-service">
                     <span class="flex justify-start text-primary text-sm sm:text-[18px] font-inter font-semibold">Journey</span>
                 </div>
             </div> 
             
             <div class=" container px-3 mx-auto mt-[30px]">
-                 <div class="journey-track flex flex-col lg:flex-row gap-5 lg:gap-0 justify-between items-start lg:items-center">
+                 <div class="journey-track flex flex-col lg:flex-row gap-[120px] lg:gap-0 justify-between items-start lg:items-center">
                   <div data-duration="0.8s" data-delay="0.2s" class="animate__animated animate__fadeInUp">
-                    <div class="school flex flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
-                        <div class="degree size-12 sm:size-14  transition-all duration-300 ease group-hover:bg-primary rounded-full bg-primary/20 flex justify-center items-center">
+                    <div class="relative school  flex flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
+                        <div class=" degree size-12 sm:size-14  transition-all duration-300 ease group-hover:bg-primary rounded-full bg-primary/20 flex justify-center items-center">
                             <i class="ri-graduation-cap-line text-primary text-2xl sm:text-3xl transition-all duration-300 ease group-hover:text-white"></i>
                         </div>
                         <div class="info">
@@ -395,13 +395,16 @@
                                 <br class="hidden lg:block"> Power Electronics</p>
                         </div>
                      </div>
+                     <div class="timeline w-[2px] h-[90px] lg:w-[120px] xl:w-[185px] absolute left-[22px] sm:left-6 top-[60px] sm:top-[70px] lg:left-[100px] lg:top-6 lg:h-0.5 bg-primary"></div>
+                    <div class="timeline size-[10px] rounded-full absolute lg:left-[100px] left-[18px]  sm:left-[20px] -bottom-5 sm:-bottom-5  lg:top-5  bg-primary"></div>
+                    <div class="timeline size-[10px] rounded-full absolute lg:left-[211px] left-[18px] sm:left-[20px] -bottom-[110px] sm:-bottom-[110px] xl:left-[280px] lg:top-5  bg-primary"></div>
                     </div>
 
 
 
 
                     <div data-duration="0.8s" data-delay="0.3s" class="animate__animated animate__fadeInUp">
-                     <div class="school flex flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
+                     <div class="school relative flex flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
                         <div class="degree size-12 sm:size-14 transition-all duration-300 ease group-hover:bg-primary rounded-full bg-primary/20 flex justify-center items-center">
                             <i class="ri-suitcase-line text-primary text-2xl sm:text-3xl transition-all duration-300 ease group-hover:text-white"></i>
                         </div>
@@ -411,9 +414,18 @@
                                 <br class="hidden lg:block">Engineer</p>
                         </div>
                         </div>
+                        <div
+                            class="timeline w-[2px] h-[90px] lg:w-[120px] xl:w-[185px] absolute left-[22px] sm:left-6 top-[60px] sm:top-[70px] lg:left-[100px] lg:top-6 lg:h-0.5 bg-primary">
+                        </div>
+                        <div
+                            class="timeline size-[10px] rounded-full absolute lg:left-[100px] left-[18px]  sm:left-[20px] -bottom-5 sm:-bottom-5  lg:top-5  bg-primary">
+                        </div>
+                        <div
+                            class="timeline size-[10px] rounded-full absolute lg:left-[211px] left-[18px] sm:left-[20px] -bottom-[110px] sm:-bottom-[110px] xl:left-[280px] lg:top-5  bg-primary">
+                        </div>
                     </div>
                   <div data-duration="0.8s" data-delay="0.4s" class="animate__animated animate__fadeInUp">
-                     <div class="school flex flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
+                     <div class="school relative flex flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
                         <div class="degree size-12 sm:size-14 transition-all duration-300 ease group-hover:bg-primary rounded-full bg-primary/20 flex justify-center items-center">
                             <i class="ri-user-settings-line text-primary text-2xl sm:text-3xl transition-all duration-300 ease group-hover:text-white"></i>
                         </div>
@@ -423,9 +435,18 @@
                                 <br class="hidden lg:block">Service Engineer</p>
                         </div>
                          </div>
+                        <div
+                            class="timeline w-[2px] h-[90px] lg:w-[120px] xl:w-[185px] absolute left-[22px] sm:left-6 top-[60px] sm:top-[70px] lg:left-[100px] lg:top-6 lg:h-0.5 bg-primary">
+                        </div>
+                        <div
+                            class="timeline size-[10px] rounded-full absolute lg:left-[100px] left-[18px]  sm:left-[20px] -bottom-5 sm:-bottom-5  lg:top-5  bg-primary">
+                        </div>
+                        <div
+                            class="timeline size-[10px] rounded-full absolute lg:left-[211px] left-[18px] sm:left-[20px] -bottom-[110px] sm:-bottom-[110px] xl:left-[280px] lg:top-5  bg-primary">
+                        </div>
                     </div>
                   <div data-duration="0.8s" data-delay="0.5s" class="animate__animated animate__fadeInUp">
-                     <div class="school flex  flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
+                     <div class="school relative flex  flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
                         <div class="degree size-12 sm:size-14 transition-all duration-300 ease group-hover:bg-primary rounded-full bg-primary/20 flex justify-center items-center">
                             <i class="ri-code-s-slash-line text-primary text-2xl sm:text-3xl transition-all duration-300 ease group-hover:text-white"></i>
                         </div>
@@ -434,6 +455,15 @@
                             <p class="text-secondary text-start lg:text-center text-sm">Started Learning
                                 <br class="hidden lg:block">Web Designing</p>
                         </div>
+                        </div>
+                        <div
+                            class="timeline w-[2px] h-[90px] lg:w-[120px] xl:w-[185px] absolute left-[22px] sm:left-6 top-[60px] sm:top-[70px] lg:left-[100px] lg:top-6 lg:h-0.5 bg-primary">
+                        </div>
+                        <div
+                            class="timeline size-[10px] rounded-full absolute lg:left-[100px] left-[18px]  sm:left-[20px] -bottom-5 sm:-bottom-5  lg:top-5  bg-primary">
+                        </div>
+                        <div
+                            class="timeline size-[10px] rounded-full absolute lg:left-[211px] left-[18px] sm:left-[20px] -bottom-[110px] sm:-bottom-[110px] xl:left-[280px] lg:top-5  bg-primary">
                         </div>
 
                     </div>
