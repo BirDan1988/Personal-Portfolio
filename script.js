@@ -8,11 +8,19 @@ $(document).ready(function(){
      $('.nav-link').toggleClass('text-white/70')
      $('#moon').toggle('hide')
      $('#sun').toggle('show')
+
     
  })
 
  $('#toggle-btn-menu').click(function(){
      $('.toggle-nav-menu').toggleClass('h-[240px]')
+ })
+
+ $('.nav-menu li a').click(function(){
+    $(this).addClass('font-semibold text-primary border-b-[2px] border-primary')
+        $(this).removeClass('font-medium text-secondary')
+        $(this).parent().siblings().find('a').removeClass('font-semibold text-primary border-b-[2px] border-primary')
+        $$(this).parent().siblings().find('a').addClass('font-medium text-secondary')
  })
 
 
