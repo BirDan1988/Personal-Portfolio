@@ -24,6 +24,13 @@ $(document).ready(function(){
         $$(this).parent().siblings().find('a').addClass('font-medium text-secondary')
  })
 
+  $('.toggle-nav-menu li a').click(function(){
+    $(this).addClass('font-semibold text-primary')
+        $(this).removeClass(' text-secondary')
+        $(this).parent().siblings().find('a').removeClass('font-semibold text-primary')
+        $$(this).parent().siblings().find('a').addClass(' text-secondary')
+ })
+
 
 
 })
