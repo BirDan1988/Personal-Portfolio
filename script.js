@@ -14,7 +14,7 @@ $(document).ready(function(){
  })
 
  $('#toggle-btn-menu').click(function(){
-     $('.toggle-nav-menu').toggleClass('h-[240px]')
+     $('.toggle-nav-menu').toggleClass('h-[280px]')
  })
 
  $('.nav-menu li a').click(function(){
@@ -32,5 +32,125 @@ $(document).ready(function(){
  })
 
 
+    $(function () {
+
+        const $dot = $("#cursorDot");
+        const $circle = $("#cursorCircle");
+
+        let mouseX = 0;
+        let mouseY = 0;
+
+        let circleX = 0;
+        let circleY = 0;
+
+
+        // Mouse movement
+        $(document).on("mousemove", function (e) {
+
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            // Small dot follows mouse immediately
+            $dot.css({
+                left: mouseX + "px",
+                top: mouseY + "px"
+            });
+
+        });
+
+
+        // Smooth circle follower
+        function animate() {
+
+            circleX += (mouseX - circleX) * 0.12;
+            circleY += (mouseY - circleY) * 0.12;
+
+            $circle.css({
+                left: circleX + "px",
+                top: circleY + "px"
+            });
+
+            requestAnimationFrame(animate);
+
+        }
+
+        animate();
+
+    });
+
+
+
+$(document).ready(function () {
+
+    var wow = new WOW({
+        boxClass: "wow",
+        animateClass: "animate__animated",
+        offset: 100,
+        mobile: true,
+        live: true
+    });
+
+    wow.init();
+
+
+    /*
+    =====================================
+    REPLAY WOW WHEN ELEMENT LEAVES SCREEN
+    =====================================
+    */
+
+    const wowElements = document.querySelectorAll(".wow");
+
+    const observer = new IntersectionObserver(function (entries) {
+
+        entries.forEach(function (entry) {
+
+            const element = entry.target;
+
+            if (entry.isIntersecting) {
+
+                // Element entered viewport
+                element.classList.remove("animate__animated");
+
+                // Force browser to reset animation
+                void element.offsetWidth;
+
+                // Start animation again
+                element.classList.add("animate__animated");
+
+            } else {
+
+                // Element left viewport
+                element.classList.remove("animate__animated");
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.1
+    });
+
+
+    wowElements.forEach(function (element) {
+        observer.observe(element);
+    });
+
+});
+
+
+  
+
+       
+
+    
+
+
+
 
 })
+AOS.init({
+    duration: 800,
+    once: false,
+    mirror: true
+});
