@@ -80,63 +80,8 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function () {
-
-    var wow = new WOW({
-        boxClass: "wow",
-        animateClass: "animate__animated",
-        offset: 100,
-        mobile: true,
-        live: true
-    });
-
-    wow.init();
 
 
-    /*
-    =====================================
-    REPLAY WOW WHEN ELEMENT LEAVES SCREEN
-    =====================================
-    */
-
-    const wowElements = document.querySelectorAll(".wow");
-
-    const observer = new IntersectionObserver(function (entries) {
-
-        entries.forEach(function (entry) {
-
-            const element = entry.target;
-
-            if (entry.isIntersecting) {
-
-                // Element entered viewport
-                element.classList.remove("animate__animated");
-
-                // Force browser to reset animation
-                void element.offsetWidth;
-
-                // Start animation again
-                element.classList.add("animate__animated");
-
-            } else {
-
-                // Element left viewport
-                element.classList.remove("animate__animated");
-
-            }
-
-        });
-
-    }, {
-        threshold: 0.1
-    });
-
-
-    wowElements.forEach(function (element) {
-        observer.observe(element);
-    });
-
-});
 
 
   
@@ -149,8 +94,5 @@ $(document).ready(function () {
 
 
 })
-AOS.init({
-    duration: 800,
-    once: false,
-    mirror: true
-});
+
+   AOS.init();

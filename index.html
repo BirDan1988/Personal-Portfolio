@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +50,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        
 
         
 
@@ -58,9 +59,8 @@
 
 <body>
     <header>
-        <div class="w-full ">
-            <div data-aos="fade-down" data-aos-duration="500"
-                class="relative z-50   mx-auto px-3 py-2 flex justify-between items-center">
+        <div class="w-full" data-aos="fade-down" data-aos-duration="500">
+            <div  class="relative z-50   mx-auto px-3 py-2 flex justify-between items-center">
                 <!-- logo part -->
                 <div class=" logo flex gap-3 items-center">
                     <img class=" transition-all duration-300 ease hover:-translate-y-0.5 w-[45px] h-[35px] sm:w-[60px] sm:h-[50px]"
@@ -128,48 +128,48 @@
                 </div>
             </div>
         </div>
-        </div>
+
     </header>
 
     <section id="hero">
         <div class="w-full">
             <div class="container mx-auto px-3">
                 <div class="grid grid-cols-1 lg:grid-cols-2 flex  flex-col lg:flex-row gap-5 items-center">
-                    <div data-aos="fade-right" class=" left-part px-3 order-2 lg:order-1">
+                    <div class=" left-part px-3 order-2 lg:order-1">
                         <span class="indicator text-green-600 flex items-center gap-2 font-medium font-inter"><i class="fa-solid fa-circle text-[8px] animate-[pulseDot_1.5s_ease-in-out_infinite] flex justify-center items-center mb-[2px]"></i>Available for work</span>
-                        <h1 data-aos-duration="0.8s" data-aos="fade-up" class=" text-[24px]/[30px] min-[550px]:text-[40px]/[50px]  md:text-[54px]/[70px] text-heading font-bold font-poppins mt-3">
+                        <h1 data-aos-duration="800" data-aos="fade-up" class=" text-[24px]/[30px] min-[550px]:text-[40px]/[50px]  md:text-[54px]/[70px] text-heading font-bold font-poppins mt-3">
                             I Design Websites
                            <br><span class="text-primary">That Make an Impact</span> 
                         </h1>
-                        <p data-aos-duration="0.8s" data-aos-delay="0.15s" data-aos="fade-up" class=" text-secondary font-regular text-sm sm:text-[20px]/[30px] font-inter mt-4">
+                        <p data-aos-duration="800" data-aos-delay="300" data-aos="fade-up" class=" text-secondary font-regular text-sm sm:text-[20px]/[30px] font-inter mt-4">
                             I create clean, modern and responsive websites 
                           <br class="hidden lg:block"> that help businesses grow and connect with
                            <br class="hidden lg:block">their audience.
                         </p>
                         <div class="hero-button mt-8 flex flex-col sm:flex-row gap-3 sm:gap-5">
-                            <div class="primary-btn ">
+                            <div data-aos="fade-up" class="primary-btn ">
                             <a class="font-poppins font-medium text-sm px-4 py-2 rounded-md bg-primary text-white flex sm:inline-flex items-center gap-3 border border-primary justify-center   transition-all duration-300 ease-out hover:bg-hover hover:-translate-y-1 hover:shadow-lg" href="index.html#contact">Hire Me <i class="fa-solid fa-arrow-right text-lg"></i></a>
                             </div>
-                            <div class="secondary-btn">
+                            <div data-aos="fade-up" data-aos-delay="500" class="secondary-btn">
                             <a class="font-poppins font-medium text-sm px-4 py-2 rounded-md bg-transparent text-primary border border-primary rounded-lg flex sm:inline-flex items-center gap-3 justify-center transition-all duration-300 ease-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:shadow-md" href="images/Birju_Danak_Resume.pdf"  download>Download CV<i class="fa-solid fa-download text-lg"></i></a>
                             </div>
                         </div>
                         <div class="social-links mt-8">
-                            <p class="text-secondary text-lg font-medium font-inter">Find me on</p>
-                            <div class="social-icons mt-2 flex gap-4">
+                            <p data-aos="fade-right" class="text-secondary text-lg font-medium font-inter">Find me on</p>
+                            <div data-aos="fade-up" class="social-icons mt-2 flex gap-4">
                             <div class="linkedin w-[50px] h-[45px] rounded-lg flex justify-center items-center border border-gray-300  transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:shadow-xl">
                                <a href="https://www.linkedin.com/in/birju-danak" target="_blank"> <i class="fa-brands fa-linkedin-in text-2xl text-heading hover:text-primary"></i></a>
                             </div>
-                            <div class="github w-[50px] h-[45px] rounded-lg flex justify-center items-center border border-gray-300 transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:shadow-xl">
+                            <div data-aos="fade-up" data-aos-delay="200" class="github w-[50px] h-[45px] rounded-lg flex justify-center items-center border border-gray-300 transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:shadow-xl">
                                <a href="https://github.com/BirDan1988" target="_blank"> <i class="fa-brands fa-github text-2xl text-heading hover:text-primary"></i></a>
                             </div>
-                            <div class="email w-[50px] h-[45px] rounded-lg flex justify-center items-center border border-gray-300 transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:shadow-xl">
+                            <div data-aos="fade-up" data-aos-delay="300" class="email w-[50px] h-[45px] rounded-lg flex justify-center items-center border border-gray-300 transition-all duration-300 hover:border-primary hover:-translate-y-1 hover:shadow-xl">
                                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mailto:birjudanak@gmail.com" target="_blank"><i class="fa-regular fa-envelope text-2xl text-heading hover:text-primary"></i></a>
                             </div>
                         </div>
                         </div>
                     </div>
-                    <div class="wow animate__animated animate__fadeInRight right-part flex justify-center order-1 lg:order-2">
+                    <div data-aos="fade-left" data-aos-duration="800" class=" right-part flex justify-center order-1 lg:order-2">
                         <div class="hero-image w-full">
                             <img class="w-full h-full object-cover transition-transform duration-500 " src="images/Hero-image-1.png">
                         </div>
@@ -181,8 +181,8 @@
 
 <!-- service section -->
     <section id="service">
-        <div data-aos-duration="0.8s"  class=" w-full my-8  mt-[50px]">
-            <div class="wow animate__animated animate__fadeInLeft container px-3 mx-auto">
+        <div data-aos-duration="800"  class=" w-full my-8  mt-[50px]">
+            <div data-aos="fade-left" class="wow  container px-3 mx-auto">
                 <div class="title-service">
                     <span class="flex justify-center text-primary text-sm sm:text-[18px] font-inter font-semibold">Service</span>
                     <h2 class="mt-2 text:xl sm:text-2xl text-heading font-semibold font-poppins text-center relative after:absolute after:-bottom-4 after:translate-x-1/2 after:right-1/2 after:h-1 after:w-12 after:bg-primary">What can i help you with</h2>
@@ -190,9 +190,9 @@
             </div>
 
             <!-- card-section -->
-             <div data-aos-duration="0.8s"  class="wow animate__animated animate__fadeInRight container px-3 mx-auto mt-10">
+             <div data-aos-duration="800" data-aos="fade-right"  class="wow  container px-3 mx-auto mt-10">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
-                    <div data-aos-delay="0.1s" class="wow animate__animated animate__fadeInUp h-full">
+                    <div data-aos="fade-up" data-aos-delay="0.1s" class=" h-full">
                     <div class=  " card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] flex flex-col gap-4 transition-all duration-300 group ease hover:-translate-y-2 hover:shadow-lg hover:border-primary h-full">
                         <div class="icon size-[60px] rounded-full bg-primary/10 group-hover:bg-primary flex justify-center items-center  duration-300 transition-all ease">
                          <i class="fa-solid fa-desktop text-primary group-hover:text-white text-2xl"></i>
@@ -204,7 +204,7 @@
                             <a class="flex items-center text-[18px] font-medium text-primary gap-3 transition-all duration-300 ease group" href="">View Project<i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
                     </div>
                     </div>
-                    <div data-aos-delay="0.2s" class="div wow animate__animated animate__fadeInUp h-full">
+                    <div data-aos-delay="200" data-aos="fade-up" class=" h-full">
                     <div  class=" card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] flex flex-col group gap-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary h-full">
                         <div class="icon size-[60px] rounded-full bg-primary/10 group-hover:bg-primary flex justify-center items-center  duration-300 transition-all ease">
                          <i class="fa-solid fa-mobile-screen-button text-primary group-hover:text-white text-2xl"></i>
@@ -216,7 +216,7 @@
                             <a class="flex items-center text-[18px] font-medium text-primary gap-3 transition-all duration-300 ease group" href="">View Project<i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
                     </div>
                     </div>
-                    <div data-aos-delay="0.3s" class="div wow animate__animated animate__fadeInUp">
+                    <div data-aos-delay="300" data-aos="fade-up" class="div ">
                     <div  class="p card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] flex flex-col group gap-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary h">
                         <div class="icon size-[60px] rounded-full bg-primary/10 group-hover:bg-primary flex justify-center items-center  duration-300 transition-all ease">
                          <i class="fa-solid fa-rocket text-primary group-hover:text-white text-2xl"></i>
@@ -228,7 +228,7 @@
                             <a class="flex items-center text-[18px] font-medium text-primary gap-3 transition-all duration-300 ease group" href="">View Project<i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
                     </div>
                     </div>
-                    <div data-aos-delay="0.4s" class="div wow animate__animated animate__fadeInUp">
+                    <div data-aos-delay="400" data-aos="fade-up" class="div ">
                     <div  class=" card-1 px-4 py-6 border border-[#C4BEBE] rounded-lg shadow-[0px_1px_5px_rgba(0,0,0,0.3)] group flex flex-col gap-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary h-full">
                         <div class="icon size-[60px] rounded-full bg-primary/10 group-hover:bg-primary flex justify-center items-center  duration-300 transition-all ease">
                          <i class="fa-solid fa-bezier-curve text-primary group-hover:text-white text-2xl"></i>
@@ -250,13 +250,13 @@
         <div class="w-full mt-[50px]">
             <div class="container mx-auto px-3">
                 <div class="grid grid-cols-12">
-                    <div data-aos-duration="0.8s" class="wow animate__animated animate__fadeInLeft image-about col-span-12 lg:col-span-4 rounded-lg overflow-hidden">
+                    <div data-aos-duration="800" data-aos="fade-right" class=" image-about col-span-12 lg:col-span-4 rounded-lg overflow-hidden">
         
                         <img class="w-full h-full object-cover hover:scale-[1.01] hover:shadow-lg transition-all duration-300 ease " src="images/about-image.png">
                         
                     </div>
                     <div class="col-span-12 lg:col-span-8 px-0 lg:px-3 mt-5 lg:mt-0">
-                        <div data-aos-duration="0.8s" data-aos-delay="0.15s" class="wow animate__animated animate__fadeInRight container px-3 mx-auto">
+                        <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="300" class="InRight container px-3 mx-auto">
                             <div class="title-service">
                                 <h2  class="mt-2 mb-10 text:xl sm:text-2xl text-heading font-semibold font-poppins  relative after:absolute after:-bottom-4 after:left-0 after:h-1 after:w-12 after:bg-primary"> I'm Birju Danak</h2>
                                     <div class="info space-y-3 sm:space-y-4">
@@ -268,21 +268,21 @@
                                     </div>
                             </div>
                             <div class="work-details flex sm:flex-row flex-col gap-8   mt-8">
-                                <div data-aos-delay="0.2s" class= "wow animate__animated animate__fadeInUp work-1 flex items-center gap-3 transition-all duration-300 ease group ">
+                                <div data-aos-delay="200" data-aos="fade-up" class= " work-1 flex items-center gap-3 transition-all duration-300 ease group ">
                                     <div class="icon shrink-0 size-10 sm:size-12 rounded-lg border border-primary/30 flex justify-center items-center group-hover:bg-primary transition-all duration-300 ease"><i class="fa-solid fa-layer-group text-primary  text-xl group-hover:text-white duration-300 transition-all ease"></i></div>
                                     <div class="details">
                                         <h2 class="text-heading text-[16px] sm:text-lg font-poppins font-medium">Clean Design</h2>
                                         <p class="text-secondary text-[14px] sm:text-sm font-medium">Modern & Minimal</p>
                                     </div>
                                 </div>
-                                <div data-aos-delay="0.3s" class="wow animate__animated animate__fadeInUp work-2 flex items-center gap-3  transition-all duration-300 ease group">
+                                <div data-aos-delay="300" data-aos="fade-up" class=" work-2 flex items-center gap-3  transition-all duration-300 ease group">
                                     <div class="icon shrink-0 size-10 sm:size-12 rounded-lg border border-primary/30 flex justify-center items-center group-hover:bg-primary transition-all duration-300 ease"><i class="fa-regular fa-futbol text-primary text-xl group-hover:text-white duration-300 transition-all ease"></i></div>
                                     <div data-aos-delay="0.4s" class="details">
                                         <h2 class="text-heading text-[16px] sm:text-lg font-poppins font-medium">Pixel Perfect</h2>
                                         <p class="text-secondary text-[14px] sm:text-sm font-medium">High Quality</p>
                                     </div>
                                 </div>
-                                <div class="wow animate__animated animate__fadeInUp work-3 flex items-center gap-3 transition-all duration-300 group">
+                                <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="800" class="wow animate__animated animate__fadeInUp work-3 flex items-center gap-3 transition-all duration-300 group">
                                     <div class="icon shrink-0 size-10 sm:size-12 rounded-lg border border-primary/30 flex justify-center items-center group-hover:bg-primary transition-all duration-300 ease"><i class="fa-regular fa-clock text-primary text-xl group-hover:text-white duration-300 transition-all ease"></i></div>
                                     <div class="details">
                                         <h2 class="text-heading text-[16px] sm:text-lg font-poppins font-medium">On Time</h2>
@@ -299,7 +299,7 @@
 
     <section id="skill">
         <div class="w-full mt-[50px]">
-            <div class="wow animate__animated animate__fadeInUp container px-3 mx-auto">
+            <div data-aos="fade-up" class=" container px-3 mx-auto">
                 <div class="title-service">
                     <span class="flex justify-center text-primary text-sm sm:text-[18px] font-inter font-semibold">Skills & Tools</span>
                     <h2 class="mt-2 text:xl sm:text-2xl text-heading font-semibold font-poppins text-center relative after:absolute after:-bottom-4 after:translate-x-1/2 after:right-1/2 after:h-1 after:w-12 after:bg-primary">Technology I Work With</h2>
@@ -308,70 +308,70 @@
 
             <div class="container mx-auto px-12 mt-[50px]">
                 <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 ">
-                    <div data-aos-delay="0.2s" class="wow animate__animated animate__fadeInUp">
+                    <div data-aos="fade-up" data-aos-delay="200" class="">
                     <div  class=" skill-1 flex items-center justify-center p-5 border border-gray-300 rounded-lg overflow-hidden shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                         <div class="image-part ">
                             <img class=" " src="images/Figma.png">
                         </div>
                     </div>
                     </div>
-                    <div data-aos-delay="0.3s" class="wow animate__animated animate__fadeInUp">
+                    <div data-aos-delay="300" data-aos="fade-up" class="">
                      <div class=" skill-1 flex items-center justify-center p-5 border border-gray-300 rounded-lg overflow-hidden shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                         <div class="image-part ">
                             <img class=" " src="images/HTML.png">
                         </div>
                     </div>
                     </div>
-                    <div data-aos-delay="0.4s" class="wow animate__animated animate__fadeInUp">
+                    <div data-aos-delay="400" data-aos="fade-up" class="">
                      <div  class=" skill-1 flex items-center justify-center p-5 border border-gray-300 rounded-lg overflow-hidden shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                         <div class="image-part ">
                             <img class=" " src="images/CSS.png">
                         </div>
                     </div>
                     </div>
-                    <div data-aos-delay="0.5s" class="dwow animate__animated animate__fadeInUp">
+                    <div data-aos-delay="500"  data-aos="fade-up"class="d">
                      <div  class=" skill-1 flex items-center justify-center p-5 border border-gray-300 rounded-lg overflow-hidden shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                         <div class="image-part ">
                             <img class=" " src="images/bootstrap.png">
                         </div>
                     </div>
                     </div>
-                    <div  data-aos-delay="0.6s" class="wow animate__animated animate__fadeInUp">
+                    <div  data-aos-delay="600" data-aos="fade-up" class="">
                      <div  class=" skill-1 flex items-center justify-center p-5 border border-gray-300 rounded-lg overflow-hidden shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                         <div class="image-part ">
                             <img class=" " src="images/tailwind css.png">
                         </div>
                     </div>
                     </div>
-                    <div data-aos-delay="0.7s" class="wow animate__animated animate__fadeInUp">
+                    <div data-aos-delay="700" data-aos="fade-up" class="">
                       <div  class=" skill-1 flex items-center justify-center p-5 border border-gray-300 rounded-lg overflow-hidden shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                         <div class="image-part ">
                             <img class=" " src="images/java script.png">
                         </div>
                     </div>
                     </div>
-                    <div data-aos-delay="0.8s" class="wow animate__animated animate__fadeInUp">
+                    <div data-aos-delay="800" data-aos="fade-up" class="">
                       <div  class=" skill-1 flex items-center justify-center p-5 border border-gray-300 rounded-lg overflow-hidden shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                         <div class="image-part ">
                             <img class=" " src="images/jQuery.png">
                         </div>
                     </div>
                     </div>
-                    <div data-aos-delay="0.9s" class="wow animate__animated animate__fadeInUp">
+                    <div data-aos-delay="900" data-aos="fade-up" class="">
                       <div  class=" skill-1 flex items-center justify-center p-5 border border-gray-300 rounded-lg overflow-hidden shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                         <div class="image-part ">
                             <img class=" " src="images/photoshop.png">
                         </div>
                     </div>
                     </div>
-                    <div data-aos-delay="0.10s" class="wow animate__animated animate__fadeInUp">
+                    <div data-aos-delay="1000" data-aos="fade-up" class="">
                       <div  class=" skill-1 flex items-center justify-center p-5 border border-gray-300 rounded-lg overflow-hidden shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                         <div class="image-part ">
                             <img class=" " src="images/illustrator.png">
                         </div>
                     </div>
                     </div>
-                    <div data-aos-delay="0.11s" class="wow animate__animated animate__fadeInUp">
+                    <div data-aos-delay="1100" data-aos="fade-up" class="">
                       <div  class=" skill-1 flex items-center justify-center p-5 border border-gray-300 rounded-lg overflow-hidden shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                         <div class="image-part ">
                             <img class=" " src="images/Wordpress.png">
@@ -385,7 +385,7 @@
 
     <section id="journey">
         <div class="w-full mt-[50px]">
-          <div class="wow animate__animated animate__fadeInLeft container px-6 mx-auto">
+          <div data-aos="fade-right" class=" container px-6 mx-auto">
                  <div class="title-service">
                     <span class="flex justify-start text-primary text-sm sm:text-[18px] font-inter font-semibold">Journey</span>
                 </div>
@@ -393,7 +393,7 @@
             
             <div class=" container px-3 mx-auto mt-[30px]">
                  <div class="journey-track flex flex-col lg:flex-row gap-[120px] lg:gap-0 justify-between items-start lg:items-center">
-                  <div data-aos-duration="0.8s" data-aos-delay="0.2s" class="wow animate__animated animate__fadeInUp">
+                  <div data-aos-duration="800" data-aos-delay="200" data-aos="fade-up" class="">
                     <div class="relative school  flex flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
                         <div class=" degree size-12 sm:size-14  transition-all duration-300 ease group-hover:bg-primary rounded-full bg-primary/20 flex justify-center items-center">
                             <i class="ri-graduation-cap-line text-primary text-2xl sm:text-3xl transition-all duration-300 ease group-hover:text-white"></i>
@@ -412,7 +412,7 @@
 
 
 
-                    <div data-aos-duration="0.8s" data-aos-delay="0.3s" class="wow animate__animated animate__fadeInUp">
+                    <div data-aos-duration="800" data-aos-delay="300" data-aos="fade-up" class="">
                      <div class="school relative flex flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
                         <div class="degree size-12 sm:size-14 transition-all duration-300 ease group-hover:bg-primary rounded-full bg-primary/20 flex justify-center items-center">
                             <i class="ri-suitcase-line text-primary text-2xl sm:text-3xl transition-all duration-300 ease group-hover:text-white"></i>
@@ -427,7 +427,7 @@
                         <div class="timeline size-[10px] rounded-full absolute lg:left-[97px] left-[18px]  sm:left-[20px] -bottom-5 sm:-bottom-5  lg:top-5  bg-primary"> </div>
                         <div class="timeline size-[10px] rounded-full absolute lg:left-[210px] left-[18px] sm:left-[20px] -bottom-[110px] sm:-bottom-[110px] xl:left-[272px] lg:top-5  bg-primary"> </div>
                     </div>
-                  <div data-aos-duration="0.8s" data-aos-delay="0.4s" class="wow animate__animated animate__fadeInUp">
+                  <div data-aos-duration="800" data-aos-delay="400" data-aos="fade-up" class="">
                      <div class="school relative flex flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
                         <div class="degree size-12 sm:size-14 transition-all duration-300 ease group-hover:bg-primary rounded-full bg-primary/20 flex justify-center items-center">
                             <i class="ri-user-settings-line text-primary text-2xl sm:text-3xl transition-all duration-300 ease group-hover:text-white"></i>
@@ -443,7 +443,7 @@
                         <div class="timeline size-[10px] rounded-full absolute lg:left-[211px] left-[18px] sm:left-[20px] -bottom-[110px] sm:-bottom-[110px] xl:left-[274px] lg:top-5  bg-primary">
                         </div>
                     </div>
-                  <div data-aos-duration="0.8s" data-aos-delay="0.5s" class="wow animate__animated animate__fadeInUp">
+                  <div data-aos-duration="800" data-aos-delay="500" data-aos="fade-up" class="">
                      <div class="school relative flex  flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease">
                         <div class="degree size-12 sm:size-14 transition-all duration-300 ease group-hover:bg-primary rounded-full bg-primary/20 flex justify-center items-center">
                             <i class="ri-code-s-slash-line text-primary text-2xl sm:text-3xl transition-all duration-300 ease group-hover:text-white"></i>
@@ -459,7 +459,7 @@
                         <div class="timeline size-[10px] rounded-full absolute lg:left-[228px] left-[18px] sm:left-[20px] -bottom-[110px] sm:-bottom-[110px] xl:left-[290px] lg:top-5  bg-primary"></div>
 
                     </div>
-                    <div data-aos-duration="0.8s" data-aos-delay="0.6s" class="wow animate__animated animate__fadeInUp">
+                    <div data-aos-duration="800" data-aos-delay="600" data-aos="fade-up" class="">
                      <div class="school flex flex-row lg:flex-col gap-5 lg:gap-3 items-center group transition-all duration-300 ease ">
                         <div class="degree size-12 sm:size-14 transition-all duration-300 ease group-hover:bg-primary rounded-full bg-primary/20 flex justify-center items-center">
                             <i class="ri-star-line text-primary text-2xl sm:text-3xl transition-all duration-300 ease group-hover:text-white"></i>
@@ -488,7 +488,7 @@
             <div class="container mx-auto px-3 mt-[50px]">
                 <div class="projects-card">
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                        <div data-aos-duration="0.8s" data-aos-delay="0.2s" class=" wow animate__animated animate__fadeInUp">
+                        <div data-aos-duration="800" data-aos-delay="200" data-aos="fade-up" class="">
                         <div  class="  project_1 rounded-lg overflow-hidden border border-gray-300 shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                             <div class="image">
                                 <img class="w-full object-cover" src="images/cricstar-mockup.png">
@@ -500,7 +500,7 @@
                             </div>
                             </div>
                         </div>
-                        <div data-aos-duration="0.8s" data-aos-delay="0.3s" class=" wow animate__animated animate__fadeInUp">
+                        <div data-aos-duration="800" data-aos-delay="300" data-aos="fade-up" class="">
                           <div  class=" project_2 rounded-lg overflow-hidden border border-gray-300 shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                             <div class="image">
                                 <img class="w-full object-cover" src="images/smartnest-mockup.png">
@@ -512,7 +512,7 @@
                             </div>
                         </div>
                         </div>
-                        <div data-aos-duration="0.8s" data-aos-delay="0.4s" class="wow animate__animated animate__fadeInUp">
+                        <div data-aos-duration="800" data-aos-delay="400" data-aos="fade-up" class="">
                           <div  class=" project_3 rounded-lg overflow-hidden border border-gray-300 shadow-[0px_2px_15px_rgba(0,0,0,0.3 tran)] transition-all duration-300 ease hover:border-primary hover:shadow-[0px_0px_5px_rgba(240,90,71,0.5)] hover:-translate-y-1">
                             <div class="image">
                                 <img class="w-full object-cover" src="images/study.png">
@@ -537,26 +537,26 @@
                 <div class="grid grid-cols-12">
                     <div class="col-span-12 lg:col-span-4">
                         <div class="contact-details">
-                            <div class="wow animate__animated animate__fadeInLeft container px-3 mx-auto">
+                            <div data-aos="fade-right" class=" container px-3 mx-auto">
                                <div class="title-service">
                                  <span class="flex justify-start text-primary text-sm sm:text-[18px] font-inter font-semibold">Let’s Connect</span>
                                  <h2 class="mt-2 text:xl sm:text-2xl text-heading font-semibold font-poppins text-start relative after:absolute after:-bottom-4  after:left-0 after:h-1 after:w-12 after:bg-primary">Let’s Work Together</h2>
                                </div>
                             </div> 
-                            <div class="wow animate__animated animate__fadeInLeft container px-3 mx-auto mt-[40px] flex flex-col gap-3">
-                              <div class="email flex items-center gap-4 group">
+                            <div  class=" container px-3 mx-auto mt-[40px] flex flex-col gap-3">
+                              <div data-aos="fade-right" class="email flex items-center gap-4 group">
                                 <div class="shrink-0 email-icon size-8 sm:size-10 rounded-full flex justify-center items-center bg-primary/20 transition-all duration-300 ease group-hover:bg-primary ">
                                     <i class="fa-regular fa-envelope text-primary group-hover:text-white transition-all duration-300 ease text-lg sm:text-xl"></i>
                                 </div>
                                 <p class="text-secondary text-[18px] sm:text-[20px] font-medium font-inter"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=birjudanak@gmail.com" class="hover:text-primary transition-all duration-300 ease">birjudanak@gmail.com</a></p>
                               </div>
-                              <div class="contact flex items-center gap-4 group">
+                              <div data-aos="fade-right" class="contact flex items-center gap-4 group">
                                 <div class="shrink-0 email-icon size-8 sm:size-10 rounded-full flex justify-center items-center bg-primary/20 transition-all duration-300 ease group-hover:bg-primary">
                                     <i class="ri-phone-line text-primary group-hover:text-white transition-all duration-300 ease text-xl sm:text-2xl"></i>
                                 </div>
                                 <p class="text-secondary text-[18px] sm:text-[20px] font-medium font-inter"><a href="tel:+919327050969" class="hover:text-primary transition-all duration-300 ease">+91 93270 50969</a></p>
                               </div>
-                              <div class="address flex items-center gap-4 group">
+                              <div data-aos="fade-right" class="address flex items-center gap-4 group">
                                 <div class="shrink-0 email-icon size-8 sm:size-10 rounded-full flex justify-center items-center bg-primary/20 transition-all duration-300 ease group-hover:bg-primary">
                                     <i class="ri-map-pin-line text-primary group-hover:text-white transition-all duration-300 ease text-lg sm:text-2xl"></i>
                                 </div>
@@ -566,7 +566,7 @@
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-8 h-full mt-5 lg:mt-0">
-                 <div class="wow animate__animated animate__fadeInRight container px-3 mx-auto h-full ">
+                 <div data-aos="fade-left" class=" container px-3 mx-auto h-full ">
                     <div class="cta bg-primary h-full rounded-lg flex justify-center items-center py-4 px-4">
                         <div class="total-content">
                         <h3 class="text-white font-poppins font-medium text-[20px] text-center">Ready to create something meaningful?</h3>
@@ -592,7 +592,7 @@
 
     <footer>
         <div class="full mt-[50px]">
-           <div class="container mx-auto px-3">
+           <div data-aos="fade-up" class="container mx-auto px-3">
             <p class="text-sm font-inter text-heading text-center py-10"> © 2026 <span class="text-primary font-poppins font-semibold text-sm">Birju Danak.</span> All rights reserved.</p>
            </div>
         </div>
@@ -632,7 +632,7 @@
     "></div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <script src="script.js"></script>
