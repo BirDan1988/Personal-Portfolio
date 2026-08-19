@@ -7,7 +7,7 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,12 +57,12 @@
 
 </head>
 
-<body>
-    <header>
-        <div class="w-full" data-aos="fade-down" data-aos-duration="500">
-            <div  class="relative z-50   mx-auto px-3 py-2 flex justify-between items-center">
+<body >
+    <header  >
+        <div class="w-full ">
+            <div  class="relative z-50 container mx-auto px-3 py-2 flex justify-between items-center overflow-hidden">
                 <!-- logo part -->
-                <div class=" logo flex gap-3 items-center">
+                <div data-aos="fade-right" data-aos-duration="800" class=" logo flex gap-3 items-center">
                     <img class=" transition-all duration-300 ease hover:-translate-y-0.5 w-[45px] h-[35px] sm:w-[60px] sm:h-[50px]"
                         src="images/LOGO.png">
                     <div class="title">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <!-- navmenu -->
-                <div class="nav-menu">
+                <div data-aos="fade-down" data-aos-duration="800" class="nav-menu">
                     <ul class="hidden lg:flex  gap-5">
                         <li><a href="index.html" class="nav-link py-2 uppercase text-md font-semibold font-poppins text-primary border-b-[2px] border-primary relative transition-colors duration-300 hover:text-primary after:absolute after:left-0 after:-bottom-0.5 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">Home</a>
                         </li>
@@ -89,7 +89,7 @@
                 </div>
 
                 <!-- contact-button -->
-                <div class="button-theme flex gap-3 lg:gap-6 items-center">
+                <div data-aos="fade-left" data-aos-duration="800" class="button-theme flex gap-3 lg:gap-6 items-center">
                     <div class="hidden sm:flex button">
                         <a href="index.html#contact" class="text-md font-medium font-inter bg-primary hover:bg-hover text-white px-4 py-2 rounded-lg transition-all duration-300
        hover:-translate-y-0.5
@@ -106,8 +106,8 @@
                 </div>
 
                 <!-- toggle-mobile-div -->
-                <div
-                    class="toggle-nav-menu absolute left-0 top-full  z-90 w-full bg-white h-0 lg:h-0 transition-all duration-300 ease overflow-hidden">
+                <div data-aos="fade-left" data-aos-duration="800"
+                    class="toggle-nav-menu absolute left-0 top-full  z-10 w-full bg-white h-0 lg:h-0 transition-height duration-300 ease overflow-hidden">
                     <ul class="flex flex-col lg:hidden  gap-5   px-3 py-3">
                         <li><a href="index.html" class="py-2 uppercase font-medium text-md font-semibold font-poppins text-primary ">Home</a>
                         </li>
@@ -131,12 +131,12 @@
 
     </header>
 
-    <section id="hero">
-        <div class="w-full">
-            <div class="container mx-auto px-3">
-                <div class="grid grid-cols-1 lg:grid-cols-2 flex  flex-col lg:flex-row gap-5 items-center">
-                    <div class=" left-part px-3 order-2 lg:order-1">
-                        <span class="indicator text-green-600 flex items-center gap-2 font-medium font-inter"><i class="fa-solid fa-circle text-[8px] animate-[pulseDot_1.5s_ease-in-out_infinite] flex justify-center items-center mb-[2px]"></i>Available for work</span>
+    <section id="hero" >
+        <div class="w-full ">
+            <div class="container mx-auto px-3 ">
+                <div class="grid grid-cols-1 lg:grid-cols-2 flex  flex-col lg:flex-row gap-5 items-center ">
+                    <div class=" left-part px-3 order-2 lg:order-1 ">
+                        <span data-aos="fade-right" data-aos-duration="500" class="indicator text-green-600 flex items-center gap-2 font-medium font-inter"><i class="fa-solid fa-circle text-[8px] animate-[pulseDot_1.5s_ease-in-out_infinite] flex justify-center items-center mb-[2px]"></i>Available for work</span>
                         <h1 data-aos-duration="800" data-aos="fade-up" class=" text-[24px]/[30px] min-[550px]:text-[40px]/[50px]  md:text-[54px]/[70px] text-heading font-bold font-poppins mt-3">
                             I Design Websites
                            <br><span class="text-primary">That Make an Impact</span> 
@@ -169,8 +169,8 @@
                         </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" data-aos-duration="800" class=" right-part flex justify-center order-1 lg:order-2">
-                        <div class="hero-image w-full">
+                    <div  class=" right-part flex justify-center order-1 lg:order-2 overflow-hidden">
+                        <div data-aos="fade-left" data-aos-duration="800" class="hero-image w-full">
                             <img class="w-full h-full object-cover transition-transform duration-500 " src="images/Hero-image-1.png">
                         </div>
                     </div>
@@ -532,13 +532,13 @@
     </section>
 
     <section id="contact">
-        <div class="w-full mt-[50px]">
+        <div class="w-full mt-[50px] overflow-hidden">
             <div class="container mx-auto px-3">
                 <div class="grid grid-cols-12">
                     <div class="col-span-12 lg:col-span-4">
                         <div class="contact-details">
-                            <div data-aos="fade-right" class=" container px-3 mx-auto">
-                               <div class="title-service">
+                            <div  class=" container px-3 mx-auto">
+                               <div data-aos="fade-right" class="title-service">
                                  <span class="flex justify-start text-primary text-sm sm:text-[18px] font-inter font-semibold">Let’s Connect</span>
                                  <h2 class="mt-2 text:xl sm:text-2xl text-heading font-semibold font-poppins text-start relative after:absolute after:-bottom-4  after:left-0 after:h-1 after:w-12 after:bg-primary">Let’s Work Together</h2>
                                </div>
