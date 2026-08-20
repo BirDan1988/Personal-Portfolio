@@ -15,13 +15,14 @@ $(document).ready(function(){
     
  $('#toggle-theme').click(function(){
     
-     $('html').toggleClass('bg-[#171717]')
+     $('html,.header-part').toggleClass('bg-[#171717]')
      $('h2,h1,h3,.social-icons i').toggleClass('text-[#FAFAF8]')
      $('p,#moon,#sun').toggleClass('text-[#C5C5C0]')
      $('.nav-link').toggleClass('text-white/70')
      $('#moon').toggle('hide')
      $('#sun').toggle('show')
      $('.toggle-nav-menu').toggleClass('text-white bg-black')
+     
 
     
  })
