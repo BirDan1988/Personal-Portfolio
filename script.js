@@ -1,4 +1,17 @@
 $(document).ready(function(){
+
+ $(window).scroll(function(){
+    let x = $(window).scrollTop()
+    if(x>700){
+        $('.header-part').addClass('fixed top-0 left-0 w-full z-[9999] shadow-md')
+    }
+    else{
+         $('.header-part').removeClass('fixed top-0 left-0 w-full z-[9999] shadow-md')
+    }
+
+ })
+
+
     
  $('#toggle-theme').click(function(){
     
@@ -14,7 +27,7 @@ $(document).ready(function(){
  })
 
  $('#toggle-btn-menu').click(function(){
-     $('.toggle-nav-menu').toggleClass('h-[280px]')
+     $('.toggle-nav-menu').toggleClass('max-h-0 max-h-[280px]')
  })
 
  $('.nav-menu li a').click(function(){
